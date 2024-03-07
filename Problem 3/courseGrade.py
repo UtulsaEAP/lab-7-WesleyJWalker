@@ -7,7 +7,7 @@ def courseGrade():
         report = open("./Problem 3/report.txt", 'a')
     elif fileName == "./Problem 3/StudentInfo1.tsv":
         report = open("./Problem 3/report1.txt", 'a')
-    elif fileName == "/Problem 3/StudentInfo2.tsv":
+    elif fileName == "./Problem 3/StudentInfo2.tsv":
         report = open("./Problem 3/report2.txt", 'a')
     else:
         print("Invalid file name")
