@@ -38,8 +38,7 @@ def courseGrade():
         else:
             grade = "F"
             infolist.append(grade)
-        for j in range(6):
-            report.write(str(infolist[j]) + " ")
+        report.write(line.strip("\n") + " " + str(infolist[5]))
         report.write("\n")
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
