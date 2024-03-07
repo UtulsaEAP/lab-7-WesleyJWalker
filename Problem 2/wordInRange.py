@@ -10,6 +10,7 @@ def wordInRange():
             print(strippedWord + " - in range")
         else:
             print(strippedWord + " - not in range")
+        word = wordList.readline()
     return
 if __name__ == '__main__':
     wordInRange()
