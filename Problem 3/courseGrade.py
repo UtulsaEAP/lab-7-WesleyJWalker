@@ -4,11 +4,11 @@ def courseGrade():
     fileName = input()
     studentInfo = open(fileName, 'r')
     if fileName == "./Problem 3/StudentInfo.tsv":
-        report = open("./Problem 3/report.txt", 'a')
+        report = open("./Problem 3/report.txt", '+w')
     elif fileName == "./Problem 3/StudentInfo1.tsv":
-        report = open("./Problem 3/report1.txt", 'a')
+        report = open("./Problem 3/report1.txt", '+w')
     elif fileName == "./Problem 3/StudentInfo2.tsv":
-        report = open("./Problem 3/report2.txt", 'a')
+        report = open("./Problem 3/report2.txt", '+w')
     else:
         print("Invalid file name")
         return
