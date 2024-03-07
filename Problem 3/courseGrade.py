@@ -7,17 +7,17 @@ def courseGrade():
     tableNum = len(fileNames)
     studentInfo = open(fileNames[0], 'r')
     allInfo.append(studentInfo)
-    report = open("report.txt", 'a')
+    report = open("./Problem 3/report.txt", 'a')
     allReports.append(report)
     if tableNum >= 2:
         studentInfo1 = open(fileNames[1], 'r')
         allInfo.append(studentInfo1)
-        report1 = open("report1.txt", 'a')
+        report1 = open("./Problem 3/report1.txt", 'a')
         allReports.append(report1)
     if tableNum == 3:
         studentInfo2 = open(fileNames[2], 'r')
         allInfo.append(studentInfo1)
-        report2 = open("report2.txt", 'a')
+        report2 = open("./Problem 3/report2.txt", 'a')
         allReports.append(report2)
     
     i = 0
