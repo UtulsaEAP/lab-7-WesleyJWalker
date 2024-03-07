@@ -38,8 +38,18 @@ def courseGrade():
         else:
             grade = "F"
             infolist.append(grade)
+        #These lines output what is in the Readme:
         report.write(line.strip("\n") + " " + str(infolist[5]))
         report.write("\n")
+        
+        #These outputs have (strange spacing)
+        '''for i in range(6):
+            if i == 0:
+                report.write(str(infolist[i]) + " ")
+            elif i > 0 and i < 5:
+                report.write(str(infolist[i]) + "   ")
+            else:
+                report.write(str(infolist[i]) + "\n")'''
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
