@@ -39,7 +39,7 @@ def courseGrade():
             grade = "F"
             infolist.append(grade)
         #These lines output what is in the Readme:
-        report.write(line.strip("\n") + " " + str(infolist[5]))
+        report.write(line.strip("\n") + "  " + str(infolist[5]))
         report.write("\n")
         
         #These outputs have (strange spacing)
