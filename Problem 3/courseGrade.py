@@ -39,7 +39,7 @@ def courseGrade():
             grade = "F"
             infolist.append(grade)
         #These lines output what is in the Readme:
-        report.write(line.strip("\n") + "  " + str(infolist[5]))
+        report.write(line.strip("\n") + "   " + str(infolist[5]))
         report.write("\n")
         
         #These outputs have (strange spacing)
@@ -53,7 +53,7 @@ def courseGrade():
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
-    report.write("Averages: midterm1 " + f'{midterm1Av:.2f}' + ", midterm2 " + f'{midterm2Av:.2f}' + ", final " + f'{finalAv:.2f}')
+    report.write("\n" + "Averages: midterm1 " + f'{midterm1Av:.2f}' + ", midterm2 " + f'{midterm2Av:.2f}' + ", final " + f'{finalAv:.2f}')
       
       
     # TODO: Read a file name from the user and read the tsv file here. 
