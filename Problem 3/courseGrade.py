@@ -39,8 +39,8 @@ def courseGrade():
             grade = "F"
             infolist.append(grade)
         #These lines output what is in the Readme:
-        report.write(line.strip("\n") + "   " + str(infolist[5]))
-        report.write("\n")
+        '''report.write(line.strip("\n") + "   " + str(infolist[5]))
+        report.write("\n")'''
         
         #These outputs have (strange spacing)
         '''for i in range(6):
@@ -50,6 +50,8 @@ def courseGrade():
                 report.write(str(infolist[i]) + "   ")
             else:
                 report.write(str(infolist[i]) + "\n")'''
+        
+        report.write(line + "   " + infolist[5])
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
