@@ -43,15 +43,9 @@ def courseGrade():
         report.write("\n")'''
         
         #These outputs have (strange spacing)
-        '''for i in range(6):
-            if i == 0:
-                report.write(str(infolist[i]) + " ")
-            elif i > 0 and i < 5:
-                report.write(str(infolist[i]) + "   ")
-            else:
-                report.write(str(infolist[i]) + "\n")'''
-        
-        report.write(line.strip("\n") + "  " + infolist[5] + "\n")
+        for i in range(6):
+            report.write(str(infolist[i]) + "   ")
+        report.write("\n")    
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
