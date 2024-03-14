@@ -51,7 +51,7 @@ def courseGrade():
             else:
                 report.write(str(infolist[i]) + "\n")'''
         
-        report.write(line.strip("\n") + "   " + infolist[5] + "\n")
+        report.write(line.strip("\n") + "  " + infolist[5] + "\n")
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
