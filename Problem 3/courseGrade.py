@@ -44,7 +44,7 @@ def courseGrade():
         
         #These outputs have (strange spacing)
         for i in range(6):
-            report.write(str(infolist[i]) + "   ")
+            report.write(str(infolist[i]) + "\t")
         report.write("\n")    
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
