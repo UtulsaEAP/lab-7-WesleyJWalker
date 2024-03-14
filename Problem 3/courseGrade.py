@@ -51,13 +51,11 @@ def courseGrade():
             else:
                 report.write(str(infolist[i]) + "\n")'''
         
-        #report.write(line + "  " + infolist[5])
-        for i in range(6):
-            report.write(str(infolist[i]) + "   ")
+        report.write(line.strip("\n") + "   " + infolist[5] + "\n")
     midterm1Av = midterm1Av / count
     midterm2Av = midterm2Av / count
     finalAv = finalAv / count
-    report.write("\n" + "Averages: midterm1 " + f'{midterm1Av:.2f}' + ", midterm2 " + f'{midterm2Av:.2f}' + ", final " + f'{finalAv:.2f}')
+    report.write("Averages: midterm1 " + f'{midterm1Av:.2f}' + ", midterm2 " + f'{midterm2Av:.2f}' + ", final " + f'{finalAv:.2f}')
       
       
     # TODO: Read a file name from the user and read the tsv file here. 
